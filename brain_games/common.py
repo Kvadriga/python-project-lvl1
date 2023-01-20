@@ -4,16 +4,17 @@ import prompt
 
 def welcome_user():
     print("Welcome to the Brain Games!")
-    name = prompt.string('May I have your name? ', empty = True)
+    name = prompt.string('May I have your name? ', empty=True)
     print(f'Hello, {name}!')
     return name
 
+
 def get_answer():
-    answer = prompt.string('Your answer: ', empty = True)
+    answer = prompt.string('Your answer: ', empty=True)
     return answer
 
-def check_answer(result, answer, counter, name):
 
+def check_answer(result, answer, counter, name):
     if str(result) == answer:
         print('Correct!')
         counter += 1
