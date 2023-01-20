@@ -2,31 +2,24 @@
 
 import prompt
 import random
+import brain_games.common
 
-
-def welcome_user():
-    name = prompt.string('May I have your name? ')
-    print(f'Hello, {name}!')
-    return name
-
-def get_answer():
-    rand_number = random.randint(1, 1000)
-    answer = prompt.string(f'Question: {rand_number}\n')
-    return rand_number, answer
 
 def main():
-    print("Welcome to the Brain Games!")
-    name = welcome_user()
+    name = brain_games.common.welcome_user()
     print("Answer 'yes' if the number is even, otherwise answer 'no'.")
     counter = 0
     while counter < 3:
-        rand_number, answer = get_answer()
-        if (rand_number % 2 == 0 and answer == "yes") or (rand_number % 2 != 0 and answer == "no"):
-            print('Correct!')
-            counter += 1
+        rand_number = random.randint(1, 100)
+        
+        if rand_number % 2 == 0:
+            result = "yes"
         else:
-            print(f"'{answer}' is wrong answer ;(. Correct answer was 'no'.")
-            print(f"Let's try again, {name}!")
-            return
-    print(f'Congratulations, {name}!')
+            result = "no"
+        
+        print(f'Question: {rand_number}')
+        answer = brain_games.common.get_answer()
+        counter = brain_games.common.check_answer(result,answer,counter,name)
+
+    if counter == 3: print(f'Congratulations, {name}!')
 

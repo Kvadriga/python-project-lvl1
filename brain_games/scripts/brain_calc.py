@@ -23,12 +23,6 @@ def main():
         print(f'Question: {rand_number1} {action} {rand_number2}')
         
         answer = brain_games.common.get_answer()
+        counter = brain_games.common.check_answer(result,answer,counter,name)
 
-        if str(result) == answer:
-            print('Correct!')
-            counter += 1
-        else:
-            print(f"'{answer}' is wrong answer ;(. Correct answer was '{result}'.")
-            print(f"Let's try again, {name}!")
-            return
-    print(f'Congratulations, {name}!')
+    if counter == 3: print(f'Congratulations, {name}!')

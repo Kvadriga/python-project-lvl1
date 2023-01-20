@@ -12,7 +12,7 @@ def get_answer():
     answer = prompt.string('Your answer: ', empty = True)
     return answer
 
-def check_answer(result, answer):
+def check_answer(result, answer, counter, name):
 
     if str(result) == answer:
         print('Correct!')
@@ -20,4 +20,5 @@ def check_answer(result, answer):
     else:
         print(f"'{answer}' is wrong answer ;(. Correct answer was '{result}'.")
         print(f"Let's try again, {name}!")
-        return 
+        return 10
+    return counter
