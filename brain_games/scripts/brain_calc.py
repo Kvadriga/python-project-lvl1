@@ -2,32 +2,33 @@
 
 import prompt
 import random
-
-
-def welcome_user():
-    name = prompt.string('May I have your name? ')
-    print(f'Hello, {name}!')
-    return name
-
-def get_answer():
-    rand_number1 = random.randint(1, 100)
-    rand_number2 = random.randint(1, 100)
-    action = random.choice(['plus', 'minus', 'multiply'])
-    answer = prompt.string(f'Question: {rand_number}\n')
-    return rand_number, answer
+import brain_games.common
 
 def main():
-    print("Welcome to the Brain Games!")
-    name = welcome_user()
+    name = brain_games.common.welcome_user()
+    print("What is the result of the expression?")
     counter = 0
     while counter < 3:
-        print("Answer 'yes' if the number is even, otherwise answer 'no'.")
-        rand_number, answer = get_answer()
-        if (rand_number % 2 == 0 and answer == "yes") or (rand_number % 2 != 0 and answer == "no"):
+        rand_number1 = random.randint(1, 10)
+        rand_number2 = random.randint(1, 10)
+        action = random.choice(['+', '-', '*'])
+        
+        if action == '+':
+            result = rand_number1 + rand_number2
+        elif action == '-':
+            result = rand_number1 - rand_number2
+        else:
+            result = rand_number1 * rand_number2
+
+        print(f'Question: {rand_number1} {action} {rand_number2}')
+        
+        answer = brain_games.common.get_answer()
+
+        if str(result) == answer:
             print('Correct!')
             counter += 1
         else:
-            print(f"'{answer}' is wrong answer ;(. Correct answer was 'no'.")
+            print(f"'{answer}' is wrong answer ;(. Correct answer was '{result}'.")
             print(f"Let's try again, {name}!")
             return
     print(f'Congratulations, {name}!')

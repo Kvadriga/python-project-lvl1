@@ -17,9 +17,9 @@ def get_answer():
 def main():
     print("Welcome to the Brain Games!")
     name = welcome_user()
+    print("Answer 'yes' if the number is even, otherwise answer 'no'.")
     counter = 0
     while counter < 3:
-        print("Answer 'yes' if the number is even, otherwise answer 'no'.")
         rand_number, answer = get_answer()
         if (rand_number % 2 == 0 and answer == "yes") or (rand_number % 2 != 0 and answer == "no"):
             print('Correct!')
