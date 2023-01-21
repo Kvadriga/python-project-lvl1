@@ -9,16 +9,21 @@ def main():
     print("What number is missing in the progression?")
     counter = 0
     while counter < 3:
-        rand_number = random.randint(5, 15)
+        length = random.randint(5, 15)
+        l = [random.randint(1, 10)]
+        step = random.randint(1, 5)
+        i = 1
+        while i < length:
+            l.append(l[i - 1] + step)
+            i +=1
+        index = random.randint(0, length)
+        result = l[index]
+        l[index] = '..'
 
-        if rand_number % 2 == 0:
-            result = "yes"
-        else:
-            result = "no"
-
-        print(f'Question: {rand_number}')
+        print(f'Question: {l}')
         answer = brain_games.common.get_answer()
         counter = brain_games.common.check_answer(result, answer, counter, name)
 
     if counter == 3:
         print(f'Congratulations, {name}!')
+        
