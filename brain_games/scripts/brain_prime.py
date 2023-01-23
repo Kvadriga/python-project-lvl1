@@ -9,7 +9,7 @@ def main():
     print('Answer "yes" if given number is prime. Otherwise answer "no".')
     counter = 0
     while counter < 3:
-        number = random.randint(1, 20)
+        number = random.randint(1, 30)
         print(f'Question: {number}')
         i = 2
         result = 'yes'
