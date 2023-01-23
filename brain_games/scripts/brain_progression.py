@@ -20,7 +20,7 @@ def main():
         result = progression[index]
         progression[index] = '..'
         print('Question: ', end='')
-        print(" ".join(map(str,progression)))
+        print(" ".join(map(str, progression)))
         answer = brain_games.common.get_answer()
         counter = brain_games.common.check_answer(result, answer, counter, name)
 
