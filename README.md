@@ -22,7 +22,11 @@ Brain-calc
 
 ### Brain-even
 
+<<<<<<< HEAD
 [![asciicast](https://asciinema.org/a/otawcBE1NFs8TNyqRfqSVdGfw.svg)](https://asciinema.org/a/otawcBE1NFs8TNyqRfqSVdGfw)
+=======
+[![asciicast](https://asciinema.org/a/dRMEwJLrGlh0mCCm13mZcKN6c.svg)](https://asciinema.org/a/dRMEwJLrGlh0mCCm13mZcKN6c)
+>>>>>>> 37a0654 (added asciinema)
 
 ### Brain-progression
 
@@ -34,4 +38,8 @@ Brain-calc
 
 ### Brain-calc
 
+<<<<<<< HEAD
 [![asciicast](https://asciinema.org/a/EoOvWVnLZtHHh4xIurlTgHaqE.svg)](https://asciinema.org/a/EoOvWVnLZtHHh4xIurlTgHaqE)
+=======
+[![asciicast](https://asciinema.org/a/EoOvWVnLZtHHh4xIurlTgHaqE.svg)](https://asciinema.org/a/EoOvWVnLZtHHh4xIurlTgHaqE)
+>>>>>>> 37a0654 (added asciinema)
