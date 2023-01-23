@@ -6,7 +6,7 @@ import brain_games.common
 
 def main():
     name = brain_games.common.welcome_user()
-    print("Answer 'yes' if the number is even, otherwise answer 'no'.")
+    print('Answer "yes" if the number is even, otherwise answer "no".')
     counter = 0
     while counter < 3:
         rand_number = random.randint(1, 100)
