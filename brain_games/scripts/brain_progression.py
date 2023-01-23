@@ -18,9 +18,9 @@ def main():
             i += 1
         index = random.randint(0, length)
         result = progression[index]
-        progression[index] = "'..'"
-
-        print(f'Question: [{progression}]')
+        progression[index] = '..'
+        print('Question: ', end='')
+        print(" ".join(map(str,progression)))
         answer = brain_games.common.get_answer()
         counter = brain_games.common.check_answer(result, answer, counter, name)
 

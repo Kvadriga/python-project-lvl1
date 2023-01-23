@@ -22,15 +22,11 @@ Brain-calc
 
 ### Brain-even
 
-<<<<<<< HEAD
-[![asciicast](https://asciinema.org/a/otawcBE1NFs8TNyqRfqSVdGfw.svg)](https://asciinema.org/a/otawcBE1NFs8TNyqRfqSVdGfw)
-=======
 [![asciicast](https://asciinema.org/a/dRMEwJLrGlh0mCCm13mZcKN6c.svg)](https://asciinema.org/a/dRMEwJLrGlh0mCCm13mZcKN6c)
->>>>>>> 37a0654 (added asciinema)
 
 ### Brain-progression
 
-[![asciicast](https://asciinema.org/a/IW87fKjBheZVr4MM5qql8bI6K.svg)](https://asciinema.org/a/IW87fKjBheZVr4MM5qql8bI6K)
+[![asciicast](https://asciinema.org/a/xa910as0otM4QYuTMeJN1CYCq.svg)](https://asciinema.org/a/xa910as0otM4QYuTMeJN1CYCq)
 
 ### Brain-gcd
 
@@ -38,8 +34,4 @@ Brain-calc
 
 ### Brain-calc
 
-<<<<<<< HEAD
 [![asciicast](https://asciinema.org/a/EoOvWVnLZtHHh4xIurlTgHaqE.svg)](https://asciinema.org/a/EoOvWVnLZtHHh4xIurlTgHaqE)
-=======
-[![asciicast](https://asciinema.org/a/EoOvWVnLZtHHh4xIurlTgHaqE.svg)](https://asciinema.org/a/EoOvWVnLZtHHh4xIurlTgHaqE)
->>>>>>> 37a0654 (added asciinema)
