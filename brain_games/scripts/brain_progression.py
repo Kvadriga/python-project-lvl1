@@ -16,7 +16,7 @@ def main():
         while i < length:
             progression.append(progression[i - 1] + step)
             i += 1
-        index = random.randint(0, length)
+        index = random.randint(0, length - 1)
         result = progression[index]
         progression[index] = '..'
         print('Question: ', end='')
