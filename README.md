@@ -22,7 +22,7 @@ Brain-calc
 
 ### Brain-even
 
-[![asciicast](https://asciinema.org/a/dRMEwJLrGlh0mCCm13mZcKN6c.svg)](https://asciinema.org/a/dRMEwJLrGlh0mCCm13mZcKN6c)
+[![asciicast](https://asciinema.org/a/otawcBE1NFs8TNyqRfqSVdGfw.svg)](https://asciinema.org/a/otawcBE1NFs8TNyqRfqSVdGfw)
 
 ### Brain-progression
 
